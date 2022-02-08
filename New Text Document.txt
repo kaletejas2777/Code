@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page DEsign With ANimation</title>
+    <style>
+        *{
+            margin: 0;
+            outline: none;
+            box-sizing: border-box;
+        }
+        body{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #1E1f31;
+            overflow-x: hidden;
+        }
+        .wrapper{
+                position: relative;
+                height: 100vh;
+                overflow: hidden;
+        }
+        header{
+            padding: 50px 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0px 15px;
+        }
+        header ul li a{
+            color: #aba9b4;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: all ease 0.5s;
+        }
+        header ul li a:hover{
+            color:#f09053;
+
+        }
+        header ul li a.btn{
+            display: inline-block;
+            width: 180px;
+            height: 60px;
+            line-height: 60px;
+            background-color: #f09053;
+            color: #fff;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 50px;
+            transition: all ease 0.5s;
+            
+        }
+        header ul li a.btn:hover{
+            background-color: #615c59;
+        }
+        .content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 50px 100px 0;
+        }
+        .text{
+            width: 50%;
+            padding-right: 150px;
+
+        }
+        .text{
+            font-size: 28px;
+            line-height: 46px;
+            color:#fff
+        }
+        .text p span{
+            color: #f09053;
+            display: inline-block;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: #fff;
+            text-decoration: none;
+            padding: 18px 30px;
+            letter-spacing: 2px;
+            font-weight: 500;
+            margin-top: 60px;
+
+        }
+        .text a:before{
+            content: '';
+            position:absolute;
+            top:0;
+            left: 0;
+            width: 60px;
+            height: 60px;
+            border-radius: 50px;
+            background-color: #f09053;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                TEJ TECHNICAL
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Integration</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Supports</a></li>
+                    <li><a href="#">Sign up</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="text">
+                <p>Hello everyone welcome in my website <span>Tejas Kale</span>
+                    and thanks to view my website with lot of love</p>
+                    <a href="#" class = "btn">Get started</a>
+             </div>
+             <div class="img">
+                 <div class="social-icons">
+                     <img src="../Images/book2.jpg" alt="">
+                     <img src="../Images/logo3.png" alt="">
+                     <img src="../Images/logo4.4.png" alt="">
+                     <img src="../Images/brand3.png" alt="">
+                     <img src="../Images/twitter-icon.png" alt="">
+                 </div>
+                 <img class="email-icon" src="../Images/brand5.jpg" alt="">
+             </div>
+        </div>
+    </div>
+    
+</body>
+</html>
